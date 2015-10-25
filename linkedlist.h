@@ -10,4 +10,8 @@ struct list_node_t {
     list_node_t *next;
 };
 
+list_node_t *list_init(list_node_t *root);
+void list_free(list_node_t *root);
+void list_append(list_node_t *root, list_node_t *node);
+
 #endif
